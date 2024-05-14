@@ -1,5 +1,6 @@
+# nonk8s
 apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
+kind: Service
 metadata:
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
