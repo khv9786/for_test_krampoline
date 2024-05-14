@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -9,10 +9,13 @@ metadata:
   namespace: default
 spec:
   rules:
-    - http:
-      paths:
-        - mysql:
-            serviceName: krampoline
-            servicePort: 3000
-            path: /
+    - host: example.com  # 적절한 호스트 이름으로 변경
+      http:
+        paths:
+          - path: /
             pathType: Prefix
+            backend:
+              service:
+                name: krampoline
+                port:
+                  number: 3000
