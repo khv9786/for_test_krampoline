@@ -7,9 +7,6 @@ ENV MYSQL_DATABASE=als_WEBIDE_DB
 ENV MYSQL_USER=user
 ENV MYSQL_PASSWORD=user1234
 
-# SQL 파일이나 기타 초기화 스크립트를 컨테이너의 /docker-entrypoint-initdb.d 디렉토리로 복사합니다.
-# 이 스크립트들은 컨테이너가 처음 시작될 때 실행됩니다.
-COPY ./initdb.sql /docker-entrypoint-initdb.d/
 
 # MySQL 서버가 컨테이너가 시작될 때 자동으로 시작되도록 합니다.
 EXPOSE 3306
