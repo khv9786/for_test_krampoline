@@ -1,4 +1,10 @@
-namespace: default
-resources:
-  - backend.yaml
-  - Mysql.yaml
+#apiVersion: kustomize.config.k8s.io/v1beta1
+#kind: Kustomization
+#
+#namespace: krampoline
+#
+#resources:
+#  - secret.yaml
+#  - mysql.yaml
+#  - spring-backend.yaml
+#  - ingress.yaml
