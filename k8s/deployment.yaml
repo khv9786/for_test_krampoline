@@ -37,7 +37,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
-  namespace: default
+  namespace: krampoline
 spec:
   replicas: 1
   selector:
