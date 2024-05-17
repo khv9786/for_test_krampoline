@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_a85a508f0e09
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_fde60e2516b5
           resources:
             requests:
               memory: "256Mi"
@@ -50,7 +50,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_94537ca461f7
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_ae999abb1c79
           ports:
             - containerPort: 3306
           env:
